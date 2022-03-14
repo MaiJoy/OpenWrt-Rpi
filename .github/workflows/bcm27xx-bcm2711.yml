@@ -10,10 +10,10 @@ name: Build bcm27xx/bcm2711 openwrt
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: 0 18 * * *
-  # watch:
-  #   types: started
+  # schedule:
+    #- cron: 0 18 * * *
+  watch:
+     types: started
 
 env:
   CONFIG_FILE: config/bcm27xx/bcm2711.config
